@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway/raleway-regular-webfont.woff2') format('woff2'), /* Pfad zur Schriftartdatei */
+       url('fonts/Raleway/raleway-regular-webfont.woff') format('woff'); /* Optional: Backup-Format */
+  font-weight: normal; /* Oder der entsprechende Gewicht */
+  font-style: normal; /* Oder der entsprechende Stil */
+}
+
 /* Footer css */
 footer {
   background-color: #403b3b;
@@ -12,6 +20,7 @@ footer a {
   color: white;
   text-decoration: none;
   font-size: 24px;
+  font-family: "Raleway", sans-serif;
 }
 
 .footer-logo {
