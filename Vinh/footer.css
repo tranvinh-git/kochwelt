@@ -45,6 +45,16 @@ footer a {
 .footer-padding-right {
   padding-right: 32px;
 }
+.footer-link-space:hover {
+  text-decoration: underline;
+  color: white;
+}
+.media-icon:hover {
+  border: 2px solid white;
+  border-radius: 23px;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* Media Responsiv 1280*/
 
