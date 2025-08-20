@@ -1,9 +1,62 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('fonts/Raleway/raleway-regular-webfont.woff2') format('woff2'), /* Pfad zur Schriftartdatei */
-       url('fonts/Raleway/raleway-regular-webfont.woff') format('woff'); /* Optional: Backup-Format */
-  font-weight: normal; /* Oder der entsprechende Gewicht */
-  font-style: normal; /* Oder der entsprechende Stil */
+  src: url("/Kochwelt-Vinh-Ablel-Nasser/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  min-height: 100vh;
+}
+/* Rezept für Springrolls*/
+main {
+  align-items: center;
+  width: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 40px;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+.main-container-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+padding-bottom: 32px;
+}
+.icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 8px;
+  margin: 5px;
+  height: 30px;
+  width: 100px;
+}
+.clock-icon {
+  width: 16px;
+}
+.brain-icon {
+  width: 16px;
+}
+.main-img {
+  object-fit: cover;
+  height: 150px;
+  border-radius: 8px;
+  width: 100%;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #efefef;
 }
 
 /* Footer css */
@@ -20,7 +73,6 @@ footer a {
   color: white;
   text-decoration: none;
   font-size: 24px;
-  font-family: "Raleway", sans-serif;
 }
 
 .footer-logo {
