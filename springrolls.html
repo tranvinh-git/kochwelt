@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style_vinh.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="rechner_vinh.js" defer></script>
   <title>Springrolls</title>
 </head>
 
 <body>
-    <header>
+  <header>
     <div class="header">
-      <img  class="logo-header" src="./img/logo.png" alt="">
-        <nav class="menu">
-          <a class="menu-link" href="#">Start</a>
-          <a class="menu-link"   href="#">Rezept des Tages</a>
-          <a class="menu-link" href="#">Kontakt</a>
-          <a class="menu-link" href="#">Impressum</a>
-        </nav>
+      <img class="logo-header" src="./img/logo.png" alt="">
     </div>
+    <nav>
+      <a class="menu-link" href="./index.html">Start</a>
+      <a class="menu-link" href="./springrolls.html">Rezept des Tages</a>
+      <a class="menu-link" href="#">Kontakt</a>
+      <a class="menu-link" href="./impressum.html">Impressum</a>
+    </nav>
   </header>
   <main>
     <h1>Frühlingsrollen mit Gemüse</h1>
@@ -37,37 +37,36 @@
         <img class="brain-icon" src="./img/icons/calendar-alt-regular.svg">
         <p>20.08.2025</p>
       </div>
-    </div> 
+    </div>
 
     <section-zutaten>
-  <h2>Was brauchen wir?</h2>
-  <p>Die Zutaten sind standardmässig für 2 Portionen berechnet. Du kannst die Anzahl der Portionen ändern, um die Mengen anzupassen.</p>
-  
-  <!-- Eingabefeld für Portionen -->
-  <label for="portionen">Anzahl der Portionen:</label>
-  <input type="number" id="portionen" value="2" white-space="3" min="1">
-  <button onclick="berechne()">Portionen</button>
-  
-  <!-- Ergebnisbereich -->
-  <div class="ergebnis">
-    <h2>Zutaten:</h2>
-    <ul class="zutaten-liste" id="zutatenListe"></ul>
-  </div>
-  
+      <h2>Was brauchen wir?</h2>
+      <p>Die Zutaten sind standardmässig für 2 Portionen berechnet. Du kannst die Anzahl der Portionen ändern, um die
+        Mengen anzupassen.</p>
 
+      <!-- Eingabefeld für Portionen -->
+      <label for="portionen">Anzahl der Portionen:</label>
+      <input type="number" id="portionen" value="2" white-space="3" min="1">
+      <button onclick="berechne()">Portionen</button>
+
+      <!-- Ergebnisbereich -->
+      <div class="ergebnis">
+        <h2>Zutaten:</h2>
+        <ul class="zutaten-liste" id="zutatenListe"></ul>
+      </div>
     </section-zutaten>
     <section-zubereitung>
       <h2>Zubereitung</h2>
       <div class="main-container-icon">
-      <div class="icon-zubereitung">
-        <img class="clock-icon" src="./img/icons/clock-regular.svg">
-        <p>Zubereitet in 25 min</p>
+        <div class="icon-zubereitung">
+          <img class="clock-icon" src="./img/icons/clock-regular.svg">
+          <p>Zubereitet in 25 min</p>
+        </div>
+        <div class="icon-zubereitung">
+          <img class="clock-icon" src="./img/icons/clock-regular.svg">
+          <p>Fertig in 45 min</p>
+        </div>
       </div>
-      <div class="icon-zubereitung">
-        <img class="clock-icon" src="./img/icons/clock-regular.svg">
-        <p>Fertig in 45 min</p>
-      </div>
-    </div> 
       <p>Frühlingsrollenblätter einzeln im warmen Wasser durchtränken bis sie weich sind. Die einzelnen Blätter flach
         zwischen zwei feuchte Handtücher legen. Zur Seite stellen.
 
@@ -119,8 +118,8 @@
     </a>
     </div>
     <div class="footer-link-space mobile-colum">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
     </div>
     <div class="footer-padding-right">
       <a href="https://www.facebook.com/" target="_blank">
