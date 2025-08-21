@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   src: url("./fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
 
@@ -19,6 +19,9 @@ main {
 }
 h1 {
   font-family: "Raleway", sans-serif;
+  font-size: 32px;
+}
+h2 {
   font-size: 24px;
 }
 .main-container-icon {
@@ -26,7 +29,7 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   font-size: 12px;
-padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 .icon {
   display: flex;
@@ -50,30 +53,78 @@ padding-bottom: 32px;
   border-radius: 8px;
   width: 100%;
 }
+
+input,
+button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 12px;
+  width: 100px;
+
+}
+
+input {
+  width: 32px;
+  border: 0.5px solid ;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-right: 0;
+  background-color: #efefef;
+}
+
+button {
+  background-color: #008000;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #008000;
+  padding-left: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.ergebnis {
+  margin-top: 20px;
+}
+.zutaten-liste {
+  list-style-type: none;
+  padding: 0;
+}
+.zutaten-liste li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+li {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #efefef;
+  border-radius: 8px;
+}
+
+
 .container-nutrition {
   margin: 0;
   font-size: 16px;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #efefef;
-}
+
 tbody {
   background-color: #fafafa;
-  text-align: center;  
+  text-align: center;
 }
 table {
   border: none;
   border-collapse: collapse;
-  
 }
 th {
   font-size: 12px;
@@ -86,6 +137,26 @@ tr {
 }
 .section-zubereitung p {
   overflow-wrap: anywhere;
+}
+.icon-zubereitung {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 8px;
+  margin: 5px;
+  height: 30px;
+  width: 200px;
+}
+.profil_vinh {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    object-position: center 20%;
+    object-fit: cover;
+}
+.section-profil {
+  padding-top: 12px;
 }
 
 /* Footer css */
