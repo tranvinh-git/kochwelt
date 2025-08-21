@@ -30,6 +30,7 @@ h2 {
   align-items: center;
   font-size: 12px;
   padding-bottom: 32px;
+  gap: 25px;;
 }
 .icon {
   display: flex;
@@ -60,7 +61,6 @@ button {
   margin: 5px 0;
   font-size: 12px;
   width: 100px;
-
 }
 
 input {
@@ -107,7 +107,6 @@ ul li:nth-child(odd) {
   border-radius: 8px;
 }
 
-
 .container-nutrition {
   margin: 0;
   font-size: 16px;
@@ -116,6 +115,8 @@ ul li:nth-child(odd) {
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 tbody {
@@ -144,9 +145,12 @@ tr {
   align-items: center;
   background-color: #efefef;
   border-radius: 8px;
-  margin: 5px;
   height: 30px;
   width: 200px;
+}
+p {
+  margin: 0;
+  object-fit: cover;
 }
 .profil_vinh {
     border-radius: 50%;
@@ -154,9 +158,6 @@ tr {
     width: 120px;
     object-position: center 20%;
     object-fit: cover;
-}
-.section-profil {
-  padding-top: 12px;
 }
 
 /* Footer css */
