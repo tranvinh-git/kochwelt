@@ -1,0 +1,23 @@
+/** @format */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.first-section {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-top: 40px;
+}
+.first-img {
+  display: flex;
+  justify-content: flex-start;
+  display: flexbox;
+  padding-left: 10px;
+  gap: 20px;
+  width: 600px;
+  height: 200px;
+}
+th {
+  text-align: left;
+}
