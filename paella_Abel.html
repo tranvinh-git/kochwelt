@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="paella-style.css">
     <link rel="stylesheet" href="header.css">
+    <script src="paella.js"></script>
 </head>
 <body>
      <header>
@@ -19,14 +20,34 @@
     </header>
 
     <main>
-        <h1>Paella mit Meeresfrüchten</h1>
-        <img class="main-image-paella" src="./img/paella2.jpg" alt="">
-        <div>
-            <img class="clock-logo" src="./img/icons/clock-regular.svg" alt="">
-            <p>22min</p>
-        </div>
-        <div></div>
-        <div></div>
+        
+          <h1>Paella mit Meeresfrüchten</h1>
+           <img class="main-image-paella" src="./img/paella2.jpg" alt="">
+
+           <div class="zeit-schwierigkeit">
+             <div class="kochlogos">
+               <img class="mini-logo" src="./img/icons/clock-regular.svg" alt="">
+              <p>22min</p>
+             </div>
+             <div class="kochlogos">
+               <img class="mini-logo" src="./img/icons/brain-solid.svg" alt="">
+               <p>mittel</p>
+              </div>
+              <div class="kochlogos" >
+                <img class="mini-logo" src="./img/icons/calendar-alt-regular.svg" alt="">
+                <p>22.08.2025</p>
+              </div>
+         </div>
+
+         <section-anzahl>
+            <h2>Was brauchen wir?</h2>
+            <p>Das Gericht ist für mindestens zwei Personen gedacht, und die Zutaten werden so angepasst an die Anzahl der Personen , die .essen werden</p>
+            <div class="menge">
+               <p>Anzahl Portionen:</p>
+               <input type="number" id="anzahl-portionen">
+               <button onclick="berechne()">Portionen</button>
+            </div>
+         </section-anzahl>
 
 
     </main>

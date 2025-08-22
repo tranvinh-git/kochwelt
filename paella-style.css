@@ -11,8 +11,31 @@ main{
     object-fit: cover;
     border-radius: 8px;
 }
-
-
-.clock-logo{
-    width: 20px;
+.zeit-schwierigkeit{
+    display: flex;
 }
+
+
+.mini-logo{
+    width: 16px;
+    padding-right: 10px;
+}
+
+.kochlogos{
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.menge{
+    display: flex;
+}
+
+
+
