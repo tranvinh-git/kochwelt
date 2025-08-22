@@ -86,6 +86,7 @@ h2 {
   height: 200px;
   border-radius: 8px;
   width: 100%;
+  padding-left: 80px;
 }
 
 input,

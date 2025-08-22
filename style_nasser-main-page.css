@@ -1,7 +1,6 @@
 /** @format */
 body {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
   margin: 0px;
 
 }
@@ -19,15 +18,13 @@ header {
   background-color: rgb(255, 255, 255);
   height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  padding-left: 100px;
-  padding-right: 100px;
 }
 nav {
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 105px;
+  padding-top: 100px;
 }
 
 .menu-link {
@@ -45,24 +42,20 @@ nav {
 
 /* Main CSS Start*/
 
-main {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
 .first-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   padding-top: 40px;
-  padding-left: 20px;
+
 }
 .first-img {
   display: flex;
-  justify-content: flex-start;
   width: 600px;
   height: 400px;
   border-radius: 10px 10px 10px 10px;
+
 }
 
 .first-container {
@@ -130,7 +123,7 @@ main {
   width: 400px;
   height: 300px;
   border-radius: 10px;
-  padding-right: 100px;
+
 }
 
 .third-p {
