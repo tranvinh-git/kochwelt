@@ -1,74 +1,15 @@
-body{
-    margin: 0;
+/* Rezept für Springrolls*/
+main {
+  align-items: center;
+  width: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 40px;
 }
-
-main{
-    padding: 40px;
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
 }
-.main-image-paella{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.zeit-schwierigkeit{
-    display: flex;
-}
-
-
-.mini-logo{
-    width: 16px;
-    padding-right: 10px;
-}
-
-.kochlogos{
-    display: flex;
-    background-color: rgb(240, 240, 240);
-    width: 100px;
-    height: 30px;
-    justify-content: center;
-    border-radius: 8px;
-    align-items: center;
-    margin: 5px;
-    font-size: 12px;
-}
-
-.menge{
-    display: flex;
-
-
-}
-.input-portionen{
-   
-    width: 32px;
-   
-    height: 27px;
-    border: 0.5px solid;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    padding-right: 0;
-    background-color: #efefef;
-    padding: 5px;
-    margin: 5px 0;
-    font-size: 12px;
-
-}
-
-.button-portionen{
-    height: 38px;
-    padding-right: 20px;
-    margin: 5px 0;
-    font-size: 12px;
-    margin-left: 10px;
-    background-color: green;
-    border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border: none;
-    font-size: 12px;
-    
-}
-
 h2 {
   font-size: 24px;
 }
@@ -196,6 +137,10 @@ tr {
   height: 30px;
   width: 200px;
 }
+p {
+  margin: 0;
+  object-fit: cover;
+}
 .profil_vinh {
     border-radius: 50%;
     height: 120px;
@@ -203,54 +148,3 @@ tr {
     object-position: center 20%;
     object-fit: cover;
 }
-
-/*footer*/
-
-footer {
-  background-color: #403b3b;
-  height: 150px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.footer-logo {
-  width: 60px;
-  height: 60px;
-  filter: invert(100%);
-  padding-left: 32px;
-}
-
-.media-icon {
-  width: 60px;
-  height: 60px;
-  gap: 20px;
-}
-
-.footer-link-space {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-.footer-padding-right {
-  padding-right: 32px;
-}
-.footer-link-space:hover {
-  text-decoration: underline;
-  color: white;
-}
-.media-icon:hover {
-  border: 2px solid white;
-  border-radius: 23px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
