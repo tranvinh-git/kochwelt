@@ -40,3 +40,4 @@ window.onload = function () {
   document.getElementById("portionen").value = 2; 
   berechne();
 };
+
