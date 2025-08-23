@@ -28,7 +28,6 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 105px;
-    margin-right: 30px;
 }
 
 .menu-link{
@@ -97,9 +96,6 @@ footer a {
   padding-right: 100px;
 }
 
-.footer-padding-right{
-  margin-right: 80px;
-}
 
 /* Media Responsiv 1280*/
 
