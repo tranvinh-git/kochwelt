@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,7 @@
     <link rel="stylesheet" href="origin_header_footer.css">
     <link rel="stylesheet" href="style_vinh.css">
     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
-    <title>Kochwelt</title>
-
-
+    <title>Kontakt</title>
 </head>
 
 <body>
@@ -24,9 +23,21 @@
         </nav>
     </header>
     <main>
-        <div>
+        <form   action="https://formspree.io/f/mzzappzo" method="POST">
+            <div>
+            <h2>Was willst du uns mitteilen?</h2>
+            </div>
+            <label for="email">Deine E-Mail:</label><br>
+            <input type="email" id="email" name="email" value=""><br><br>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="lname">Betreff:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="message">Deine Nachricht:</label><br>
+            <textarea name="message" maxlength="400" rows="6" cols="70" required></textarea><br><br>
+            <input type="submit" value="Submit"><br><br>
 
-        </div>
+        </form>
     </main>
 
 
