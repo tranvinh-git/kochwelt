@@ -151,7 +151,7 @@ button {
 /** @format */
 
 .first-section {
-  padding-left: 120px
+  padding-left: 120px;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
