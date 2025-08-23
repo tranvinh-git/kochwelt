@@ -17,7 +17,6 @@ body {
 
 header {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
   height: 150px;
@@ -31,21 +30,6 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 105px;
-=======
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 150px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-nav {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 105px;
->>>>>>> faf2909 (update index)
 }
 
 .menu-link {
