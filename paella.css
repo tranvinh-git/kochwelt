@@ -3,7 +3,10 @@ body{
 }
 
 main{
-    padding: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 40px;
+
 }
 .main-image-paella{
     height: 200px;
