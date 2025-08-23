@@ -1,70 +1,27 @@
-// Zutatenliste als Array (für 2 Basis-Portionen)
-const zutaten = [
-  ["Thai Kitchen Frühlingsrollenblätter", 6, "Blätter"],
-  ["Thai Kitchen Frühlingsrollen-Sauce", 2, "EL"],
-  ["Thai Kitchen Sweet Chili Sauce", 435, "ml"],
-  ["Rüebli, gerieben", 200, "g"],
-  ["Kabis, fein geschnitten", 100, "g"],
-  ["Lauch, fein geschnitten", 100, "g"],
-  ["Mungbohnen-Sprossen", 100, "g"],
-  ["Glasnudeln (Trockengewicht)", 50, "g"],
-  ["Thai Kitchen Fischsauce", 1, "EL"],
-  ["Pfeffer aus der Mühle", 1, "Prise"]
-];
+/* Array Springrolls */
+let summeSpringrolls = [3, 1, 217.50, 100, 50, 50, 50, 25, 0.5, 0.5];
+let zutatenSpringrolls = ['Bätter Thai Kitchen Frühlingsrollenblätter', 'EL Thai Kitchen Frühlingsrollen-Sauce', 'ml Thai Kitchen Sweet Chili Sauce', 'g Rüebli, gerieben', 'g Kabis, fein geschnitten', 'g Lauch, fein geschnitten', 'g Mungbohnen-Sprossen', 'g Glasnudeln (Trockengewicht)', 'EL Thai Kitchen Fischsauce','Brise Pfeffer aus der Mühle'];
 
-// Funktion zur Berechnung der Zutatenmengen
-function berechne() {
-  const portionenInput = document.getElementById("portionen");
-  const anzahlPortionen = parseInt(portionenInput.value); // Eingabe als Zahl
 
-  if (!anzahlPortionen || anzahlPortionen < 1) {
-    alert("Bitte gib eine gültige Anzahl von Portionen ein!");
-    return;
-  }
-
-  const basisPortionen = 2; // Basis-Portionenanzahl (z. B. 2 Portionen)
-  const zutatenListe = document.getElementById("zutatenListe");
-  zutatenListe.innerHTML = ""; // Vorherige Ergebnisse löschen
-
-  // Berechnung der neuen Mengen basierend auf der Portionenanzahl
-  zutaten.forEach(zutat => {
-    const neueMenge = (zutat[1] / basisPortionen) * anzahlPortionen; // Menge anpassen
-    const li = document.createElement("li");
-    li.textContent = `${neueMenge.toFixed(2)} ${zutat[2]} ${zutat[0]}`; // Ausgabe formatieren
-    zutatenListe.appendChild(li);
-  });
+/* Function Springrolls */ 
+function calculateRecipe_Springrolls() {
+    console.log('calculate recipe');
+    portions = document.getElementById('input_portions').value;
+    console.log('Portionen: ', portions);
+    document.getElementById('warning').innerHTML="";
+    if (portions < 2) {
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
+    } else if (portions > 10) {
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
+    } else {
+        calculateSpringrolls();
+    }
 }
 
-// Standardmässig Zutatenliste für 2 Portionen anzeigen
-window.onload = function () {
-  document.getElementById("portionen").value = 2; // Standardwert setzen
-  berechne(); // Zutaten für 4 Portionen berechnen
-};
-// Funktion zur Berechnung der Zutatenmengen
-function berechne() {
-  const portionenInput = document.getElementById("portionen");
-  const anzahlPortionen = parseInt(portionenInput.value); // Eingabe als Zahl
-
-  if (!anzahlPortionen || anzahlPortionen < 2) {
-    alert("Bitte gib eine gültige Anzahl von Portionen ein!");
-    return;
-  }
-
-  const basisPortionen = 2; // Basis-Portionenanzahl (z. B. 2 Portionen)
-  const zutatenListe = document.getElementById("zutatenListe");
-  zutatenListe.innerHTML = ""; // Vorherige Ergebnisse löschen
-
-  // Berechnung der neuen Mengen basierend auf der Portionenanzahl
-  zutaten.forEach(zutat => {
-    const neueMenge = (zutat[1] / basisPortionen) * anzahlPortionen; // Menge anpassen
-    const li = document.createElement("li");
-    li.textContent = `${neueMenge.toFixed(2)} ${zutat[2]} ${zutat[0]}`; // Ausgabe formatieren
-    zutatenListe.appendChild(li);
-  });
+function calculateSpringrolls() {
+    let rollsReference = document.getElementById('ingredientListRolls');
+    rollsReference.innerHTML = '';
+    for(let i = 0; i < summeSpringrolls.length; i++) {
+        rollsReference.innerHTML +=`<li>${summeSpringrolls[i] * portions} ${zutatenSpringrolls[i]}</li>`;
+    } 
 }
-
-// Standardmässig Zutatenliste für 2 Portionen anzeigen
-window.onload = function () {
-  document.getElementById("portionen").value = 2; // Standardwert setzen
-  berechne(); // Zutaten für 2 Portionen berechnen
-};

@@ -11,7 +11,7 @@
   <title>Springrolls</title>
 </head>
 
-<body>
+<body onload="calculateRecipe_Springrolls()">
   <header>
     <div class="header">
       <img class="logo-header" src="./img/logo.png" alt="">
@@ -43,18 +43,19 @@
 
     <section-zutaten>
       <h2>Was brauchen wir?</h2>
-      <p>Die Zutaten sind standardmässig für 2 Portionen berechnet. Du kannst die Anzahl der Portionen ändern, um die
-        Mengen anzupassen.</p>
+      <p>Die Zutaten sind standardmässig für 2 Portionen berechnet.<br> Du kannst die Anzahl der Portionen ändern, um
+        die Mengen anzupassen.<br> Maximal sind es 10 Portionen.</p>
 
       <!-- Eingabefeld für Portionen -->
-      <label for="portionen">Anzahl der Portionen:</label>
-      <input type="number" id="portionen" value="2" white-space="3" min="1">
-      <button onclick="berechne()">Portionen</button>
+      <label for="input_portions">Anzahl der Portionen:</label>
+      <input type="number" id="input_portions" value="2" white-space="3" max="10">
+      <button class="button-recipe" type="submit" onclick="calculateRecipe_Springrolls()">Portionen</button>
+      <p class="warning" id="warning"></p>
 
       <!-- Ergebnisbereich -->
       <div class="ergebnis">
         <h2>Zutaten:</h2>
-        <ul class="zutaten-liste" id="zutatenListe"></ul>
+        <ul class="zutaten-liste" id="ingredientListRolls"></ul>
       </div>
     </section-zutaten>
     <section-zubereitung>
@@ -128,7 +129,7 @@
         <img class="media-icon mobile-footer-media" src="./img/icons/facebook_logo.png" alt="Facebook" />
       </a>
       <a href="https://wwww.instagram.com/" target="_blank">
-        <img class="media-icon mobile-footer-media" src="./img/icons/instagram_logo.png" alt="Instagram"/>
+        <img class="media-icon mobile-footer-media" src="./img/icons/instagram_logo.png" alt="Instagram" />
       </a>
   </footer>
 </body>
