@@ -2,11 +2,22 @@ body{
     margin: 0;
 }
 
+<<<<<<< HEAD
 main{
     margin-left: 300px;
     margin-right: 300px;
     padding-top: 40px;
 
+=======
+main {
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+>>>>>>> 14d946d7779fa5caa2da97077e796b9578a5fde1
 }
 .main-image-paella{
     height: 200px;

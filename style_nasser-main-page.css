@@ -1,20 +1,9 @@
 /** @format */
 @font-face {
-  font-family: "raleway-regular";
-  src: url("./fonts/Raleway/raleway-regular-webfont.woff");
+  font-family: "Raleway"";
+  src: url("./fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
-@font-face {
-  font-family: "Viga-Regular";
-  src: url("./fonts/Viga/Viga-Regular.ttf");
-}
-@font-face {
-  font-family: "raleway-regular";
-  src: url("./fonts/Raleway/raleway-regular-webfont.woff2");
-}
-@font-face {
-  font-family: "PTSans-Bold";
-  src: url("./fonts/PT_Sans/PTSans-Bold.ttf");
-}
+
 .first-section {
   margin-top: 20px;
   display: flex;
