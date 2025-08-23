@@ -2,8 +2,14 @@ body{
     margin: 0;
 }
 
-main{
-    padding: 40px;
+main {
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .main-image-paella{
     height: 200px;
