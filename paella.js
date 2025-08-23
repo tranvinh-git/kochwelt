@@ -13,41 +13,12 @@ const zutaten = [
 
 
 
-
-function berechne() {
-  const portionenInput = document.getElementById("portionen");
-  const anzahlPortionen = parseInt(portionenInput.value);
-
-  if (!anzahlPortionen || anzahlPortionen < 1) {
-    alert("Bitte gib eine gültige Anzahl von Portionen ein!");
-    return;
-  }
-
-  const basisPortionen = 2; 
-  const zutatenListe = document.getElementById("zutatenListe");
-  zutatenListe.innerHTML = "";
-
-
-  zutaten.forEach(zutat => {
-    const neueMenge = (zutat[1] / basisPortionen) * anzahlPortionen; 
-    const li = document.createElement("li");
-    li.textContent = `${neueMenge.toFixed(2)} ${zutat[2]} ${zutat[0]}`;
-    zutatenListe.appendChild(li);
-  });
-}
-
-
-window.onload = function () {
-  document.getElementById("portionen").value = 2;
-  berechne(); 
-};
-
 function berechne() {
   const portionenInput = document.getElementById("portionen");
   const anzahlPortionen = parseInt(portionenInput.value); 
 
-  if (!anzahlPortionen || anzahlPortionen < 2) {
-    alert("Bitte gib eine gültige Anzahl von Portionen ein!");
+  if (anzahlPortionen < 2) {
+    alert("Bitte gib mindestens 2 Potionenanzahl ein!");
     return;
   }
 

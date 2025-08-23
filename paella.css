@@ -39,15 +39,9 @@ main {
     font-size: 12px;
 }
 
-.menge{
-    display: flex;
-
-
-}
 .input-portionen{
    
     width: 32px;
-   
     height: 27px;
     border: 0.5px solid;
     border-bottom-left-radius: 8px;
@@ -109,8 +103,7 @@ h2 {
   width: 100%;
 }
 
-input,
-button {
+input,button {
   padding: 10px;
   margin: 5px 0;
   font-size: 12px;
