@@ -28,7 +28,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 105px;
-    
+    margin-right: 30px;
 }
 
 .menu-link{
@@ -67,6 +67,7 @@ footer a {
   height: 60px;
   filter: invert(100%);
   padding-left: 32px;
+  margin-left: 40px;
 }
 
 .media-icon {
@@ -91,6 +92,10 @@ footer a {
   border-radius: 23px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.footer-padding-right{
+  margin-right: 80px;
 }
 
 /* Media Responsiv 1280*/
