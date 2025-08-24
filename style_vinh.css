@@ -104,7 +104,7 @@ main {
   display: flex;
   gap: 40px;
   width: auto;
-  margin-left: 85px;
+  margin-left: 100px;
 }
 
 .first-img {
@@ -195,6 +195,13 @@ button:hover {
   padding-bottom: 20px;
 
 
+}
+.pizza1{
+  padding-right:190px;
+}
+
+.paella1{
+  padding-left: 190px;
 }
 
 .dishes-img {
