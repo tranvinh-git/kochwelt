@@ -95,8 +95,8 @@ main {
   margin: 0 auto;
   padding-bottom: 40px;
   padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
+
+
 
 }
 
@@ -104,6 +104,7 @@ main {
   display: flex;
   gap: 40px;
   width: auto;
+  margin-left: 85px;
 }
 
 .first-img {
@@ -167,7 +168,18 @@ button:hover {
   background-color: #45a049;
 }
 
+
+
 /* Second Section CSS*/
+
+.second-section-backg{
+  background-color: rgb(219, 218, 218);
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+ 
+}
+
 
 .second-section-title {
   display: flex;
@@ -178,7 +190,7 @@ button:hover {
 
 .second-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 20px;
 
@@ -197,9 +209,9 @@ button:hover {
 
 .third-section-title {
   display: flex;
-  ;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .third-section {
@@ -211,6 +223,7 @@ button:hover {
   background-color: #ffffff;
   padding-bottom: 20px;
   padding-right: 20px;
+  margin-right: 150px;
 
 }
 
@@ -218,8 +231,8 @@ button:hover {
   display: flex;
   width: 200px;
   height: 200px;
-  border-radius: 10px;
-  padding-right: 60px;
+ border-radius: 10px;
+  
 }
 
 /* Footer css */
