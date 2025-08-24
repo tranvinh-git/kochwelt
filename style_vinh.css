@@ -215,9 +215,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
+
+.dishes-img {
+  width: 200px;
+  height: 160px;
+  border-radius: 8px;
+}
+
 
 .pizza1 {
   padding-right: 190px;
