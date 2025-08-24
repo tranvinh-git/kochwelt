@@ -101,25 +101,48 @@ main {
 }
 
 .first-section {
-  margin-top: 20px;
   display: flex;
   gap: 40px;
+  width: auto;
 }
 
 .first-img {
-  margin-left: 120px;
   gap: 20px;
   width: 450px;
-  height: 250px;
-  border-radius: 10px;
+  height: 2s70px;
+  border-radius: 8px;
 }
 
-.croissant-text {
+.first-section-container {
   min-width: 400px;
   width: flex 1;
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button-container {
+  padding-bottom: 50px;
+}
+
+.button-recipe {
+  display: flex;
+  background-color: #008000; 
+  color: white; 
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none; 
+  font-size: 16px; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+
+.button-recipe:hover {
+  background-color: #45a049; 
 }
 
 h1 {
@@ -127,59 +150,50 @@ h1 {
   margin-top: 0px;
 }
 
-.first-section-span {
-  padding: 0px;
-}
-
 button {
-  width: 200px;
-  height: 50px;
+  width: 100px;
+  height: 33px;
   background-color: #008000;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px 8px 8px 0px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 60px;
+  transition: background-color 0.3s ease;
 }
 
-.dishes-img {
-
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  height: 280px;
-  border-radius: 10px;
-
+button:hover {
+  background-color: #45a049;
 }
 
-.title-seconsd-section {
-  font-weight: 200px;
+/* Second Section CSS*/
+
+.second-section-title {
   display: flex;
   justify-content: center;
-  background-color: #efefef;
-  margin-top: 120px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .second-section {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #efefef;
-  padding-bottom: 10px;
-  ;
-}
-
-.title-dishes-span {
-  font-weight: 200px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
-  ;
+  padding-bottom: 20px;
+
+
 }
+
+.dishes-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+
+
+
 
 .third-section-title {
   display: flex;
