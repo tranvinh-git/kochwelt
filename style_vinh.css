@@ -168,6 +168,14 @@ button:hover {
   background-color: #45a049;
 }
 
+.recipe-link{
+  text-decoration: none;
+  color: black;
+  
+}
+.recipe-link:hover{
+  text-decoration: underline;
+}
 
 
 /* Second Section CSS*/
@@ -193,15 +201,32 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 20px;
-
-
+  
 }
 .pizza1{
   padding-right:190px;
+  
+}
+
+.pizza-img:hover{
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+
 }
 
 .paella1{
   padding-left: 190px;
+}
+
+.paella-img:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+
+}
+.springrolls-img:hover{
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+
 }
 
 .dishes-img {
@@ -211,7 +236,7 @@ button:hover {
 }
 
 
-
+/*third-section*/
 
 
 .third-section-title {
