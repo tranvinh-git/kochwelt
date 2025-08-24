@@ -178,9 +178,6 @@ button:hover {
 
 }
 
-.recipe-link:hover {
-  text-decoration: underline;
-}
 
 
 /* Second Section CSS*/
@@ -218,37 +215,24 @@ button:hover {
 }
 
 .dishes-img {
-  width: 200px;
-  height: 160px;
+  width: 300px;
+  height: 190px;
   border-radius: 8px;
 }
-
+.dishes-img:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
 
 .pizza1 {
   padding-right: 190px;
 
 }
-
-.pizza-img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease;
-
-}
-
 .paella1 {
   padding-left: 190px;
 }
 
-.paella-img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease;
 
-}
-
-.springrolls-img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease;
-}
 
 
 /*Third-section*/
