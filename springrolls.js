@@ -1,6 +1,6 @@
 /* Array Springrolls */
 let summeSpringrolls = [3, 1, 217.50, 100, 50, 50, 50, 25, 0.5, 0.5];
-let zutatenSpringrolls = ['Bätter Thai Kitchen Frühlingsrollenblätter', 'EL Thai Kitchen Frühlingsrollen-Sauce', 'ml Thai Kitchen Sweet Chili Sauce', 'g Rüebli, gerieben', 'g Kabis, fein geschnitten', 'g Lauch, fein geschnitten', 'g Mungbohnen-Sprossen', 'g Glasnudeln (Trockengewicht)', 'EL Thai Kitchen Fischsauce','Brise Pfeffer aus der Mühle'];
+let zutatenSpringrolls = ['Blätter Thai Kitchen Frühlingsrollenblätter', 'EL Thai Kitchen Frühlingsrollen-Sauce', 'ml Thai Kitchen Sweet Chili Sauce', 'g Rüebli, gerieben', 'g Kabis, fein geschnitten', 'g Lauch, fein geschnitten', 'g Mungbohnen-Sprossen', 'g Glasnudeln (Trockengewicht)', 'EL Thai Kitchen Fischsauce','Brise Pfeffer aus der Mühle'];
 
 
 /* Function Springrolls */ 
