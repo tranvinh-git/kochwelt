@@ -42,6 +42,7 @@ nav {
   align-items: center;
   padding-top: 105px;
   gap: 40px;
+    overflow: hidden;
 }
 
 .menu-link {
