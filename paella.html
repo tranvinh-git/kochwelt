@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="paella.css">
   <link rel="stylesheet" href="style_vinh.css">
   <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
-
   <script src="paella.js"></script>
+
 </head>
 
-<body>
+<body onload="calculateRecipe_Paella()">
   <header>
     <a href="index.html">
       <img class="logo-header" src="./img/logo.png" alt="">
@@ -49,12 +49,15 @@
       <h2>Was werden wir brauchen?</h2>
       <p>Das Gericht ist für mindestens zwei Personen gedacht, und die Zutaten werden so angepasst an die Anzahl der
         Personen , die essen werden.</p>
-      <label for="portionen">Anzahl der Portionen:</label>
-      <input type="number" id="portionen" value="2" white-space="3" min="1">
-      <button onclick="berechne()">Portionen</button>
-      <div class="ergebnis">
+      
+      <label for="input_portions">Anzahl der Portionen:</label>
+      <input type="number" id="input_portions" value="2" white-space="3" max="10">
+      <button type="submit" onclick="calculateRecipe_Paella()">Portionen</button>
+      <p class="warning" id="warning"></p>
+   
+        <div>
         <h2>Zutaten:</h2>
-        <ul class="zutaten-liste" id="zutatenListe"></ul>
+        <ul class="zutaten-liste" id="ingredientListPaella"></ul>
       </div>
     </zutaten>
 

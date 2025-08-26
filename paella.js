@@ -1,43 +1,27 @@
-const zutaten = [
-  ["Reis", 200, "gr"],
-  ["Paprika", 1, "Stück"],
-  ["Muscheln", 300, "gr"],
-  ["Garnelen", 6, "Stück"],
-  ["Calms", 150, "g"],
-  ["Fisch Broth", 2, "l"],
-  ["Zwiebeln", 1, "stück"],
-  ["Knoblauch", 1, "Stücl"],
-  ["Tomate", 2, "stück"],
-  ["Schrimp", 4, "Stück"]
-];
+
+let summePaella = [200, 1, 300, 6, 2, 1, 1, 2, 4, 0.5];
+let zutatenPaella = ['gr Reis', 'Stück Paprika', 'gr Muscheln', 'Stück Garnelen', 'g Calms', 'l Fish Broth', 'Stück Zwiebeln', 'Sück Knoblauch', 'Stück Tomate','Stück Schrimp'];
 
 
-
-function berechne() {
-  const portionenInput = document.getElementById("portionen");
-  const anzahlPortionen = parseInt(portionenInput.value); 
-
-  if (anzahlPortionen < 2) {
-    alert("Bitte gib mindestens 2 Potionenanzahl ein!");
-    return;
-  }
-
-  const basisPortionen = 2;
-  const zutatenListe = document.getElementById("zutatenListe");
-  zutatenListe.innerHTML = "";
-
- 
-  zutaten.forEach(zutat => {
-    const neueMenge = (zutat[1] / basisPortionen) * anzahlPortionen;
-    const li = document.createElement("li");
-    li.textContent = `${neueMenge.toFixed(2)} ${zutat[2]} ${zutat[0]}`;
-    zutatenListe.appendChild(li);
-  });
+function calculateRecipe_Paella() {
+    console.log('calculate recipe');
+    portions = document.getElementById('input_portions').value;
+    console.log('Portionen: ', portions);
+    document.getElementById('warning').innerHTML="";
+    if (portions < 2) {
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
+    } else if (portions > 10) {
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
+    } else {
+        calculatePaella();
+    }
 }
 
-
-window.onload = function () {
-  document.getElementById("portionen").value = 2; 
-  berechne();
-};
+function calculatePaella() {
+    let PaellaReference = document.getElementById('ingredientListPaella');
+    PaellaReference.innerHTML = '';
+    for(let i = 0; i < summePaella.length; i++) {
+        PaellaReference.innerHTML +=`<li>${summePaella[i] * portions} ${zutatenPaella[i]}</li>`;
+    } 
+}
 

@@ -66,6 +66,11 @@ input {
   text-align: center;
 }
 
+.button-container{
+  display: flex;
+  align-items: center;
+}
+
 .warning {
   color: red;
   font-size: 14px;
