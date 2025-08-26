@@ -1,12 +1,4 @@
-/** @format */
-
-.prfile_Nasser {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-/* Rezept für Springrolls*/
+/* pizza.css */
 main {
   align-items: center;
   width: auto;
@@ -72,19 +64,6 @@ input {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   text-align: center;
-}
-
-.button-recipe {
-  background-color: #008000;
-  color: white;
-  cursor: pointer;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  height: 33px;
-  width: 100px;
-  padding: 0;
 }
 
 .warning {
@@ -170,4 +149,9 @@ tr {
 p {
   margin: 0;
   object-fit: cover;
+}
+.prfile_Nasser {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }

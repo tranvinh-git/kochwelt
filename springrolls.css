@@ -1,4 +1,4 @@
-/* Rezept für Springrolls*/
+/* springrolls.css */
 main {
   align-items: center;
   width: auto;
@@ -25,7 +25,6 @@ h2 {
   font-size: 12px;
   padding-bottom: 32px;
   gap: 25px;
-  ;
 }
 
 .icon {
@@ -68,18 +67,7 @@ input {
   text-align: center;
 }
 
-.button-recipe {
-  background-color: #008000;
-  color: white;
-  cursor: pointer;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  height: 33px;
-  width: 100px;
-  padding: 0;
-}
+
 
 .warning{
   color: red;
