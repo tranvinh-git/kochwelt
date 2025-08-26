@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="origin_header_footer.css" />
-  <link rel="stylesheet" href="springrolls.css" />
+  <link rel="stylesheet" href="style_vinh.css" />
+  <link rel="stylesheet" href="pizza.css" />
   <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
-  <link rel="stylesheet" href="pizza.css">
-  <script src="springrolls.js" defer></script>
+  <script src="pizza.js"></script>
   <title>Pizza</title>
 </head>
 
-<body onload="calculateRecipe_Springrolls()">
+<body onload="calculateRecipe_Pizza()">
   <header>
     <a href="index.html">
      <img class="logo-header" src="./img/logo.png" alt="">
@@ -34,7 +33,7 @@
       </div>
       <div class="icon">
         <img class="brain-icon" src="./img/icons/brain-solid.svg">
-        <p>mittel</p>
+        <p>simple</p>
       </div>
       <div class="icon">
         <img class="brain-icon" src="./img/icons/calendar-alt-regular.svg">
@@ -44,19 +43,23 @@
 
     <section-zutaten>
       <h2>Was brauchen wir?</h2>
-      <p>Die Zutaten sind standardmässig für 2 Portionen berechnet.<br> Du kannst die Anzahl der Portionen ändern, um
-        die Mengen anzupassen.<br> Maximal sind es 10 Portionen.</p>
+      <p>Die Zutaten sind standardmässig für eine Portion berechnet.<br> Du kannst die Anzahl der Portionen ändern, um
+        die Mengen anzupassen.<br> Maximal sind 5 Portionen.</p>
 
       <!-- Eingabefeld für Portionen -->
       <label for="input_portions">Anzahl der Portionen:</label>
-      <input type="number" id="input_portions" value="2" white-space="3" max="10">
-      <button class="button-recipe" type="submit" onclick="calculateRecipe_Springrolls()">Portionen</button>
+      <input type="number" id="input_portions" value="1" white-space="3" max="5">
+      <button class="button" type="submit" onclick="calculateRecipe_Pizza()">Portionen</button>
       <p class="warning" id="warning"></p>
 
       <!-- Ergebnisbereich -->
       <div>
-        <h2>Zutaten:</h2>
-        <ul class="zutaten-liste" id="ingredientListRolls"></ul>
+        <h2>Für den Teig:</h2>
+        <ul class="zutaten-liste" id="ingredientListTeig"></ul>
+        <h2>Für die Sauce:</h2>
+        <ul class="zutaten-liste" id="ingredientListSauce"></ul>
+        <h2>Für den Belag:</h2>
+        <ul class="zutaten-liste" id="ingredientListBelag"></ul>
       </div>
     </section-zutaten>
     <section-zubereitung>
@@ -64,43 +67,47 @@
       <div class="main-container-icon">
         <div class="icon-zubereitung">
           <img class="clock-icon" src="./img/icons/clock-regular.svg">
-          <p>Zubereitet in 90  min</p>
+          <p>Zubereitet in 30 min</p>
         </div>
         <div class="icon-zubereitung">
           <img class="clock-icon" src="./img/icons/clock-regular.svg">
           <p>Fertig in 90 min</p>
         </div>
       </div>
-      <p>Vorbereitung:<br>
-1. Den Ofen auf 250 °C vorheizen. Wird ein Pizzastein (Brotbackstein) benutzt, muss dieser 1 Std. vorher aufgeheizt werden.
 
-2.
-Die Hefe mit den Fingern in das Mehl reiben, als würde man Streusel zubereiten. Das Salz, Olivenöl und Wasser zugeben und alles zu einem Teig verarbeiten. Der Teig kann per Hand geknetet werden, dabei nicht beirren lassen, da er am Anfang wirklich sehr klebt und man nicht wirklich an einen Erfolg glaubt. Wer es lieber mag, kann den Teig auch mit dem Knethaken zubereiten. Der Teig muss insgesamt 5 - 10 Minuten geknetet werden.
-
-3.
-Den Teig 1 Stunde oder über Nacht im Kühlschrank(!!!) ruhen lassen.
-
-4.
-Zubereitung:
-Für die Tomatensauce alle Zutaten zusammen mixen. Die Konsistenz sollte dabei recht dick sein. Wenn zu dünn, mehr Tomatenmark. Wenn zu dick, mehr passierte Tomaten.
-
-5.
-Teig aus dem Kühlschrank nehmen und in 3 gleichgroße Stücke teilen und zu Kugeln formen. Nochmals 10 Minuten gehen lassen. Arbeitsfläche mit Mehl bestäuben und Kugeln darauflegen.
-
-6.
-Auf die Mitte eines Teigbällchens den Handballen auflegen und den Teig vom Körper wegdrücken, so dass er gestreckt wird. Teig drehen und erneut wegdrücken. Das Ganze solange wiederholen, bis er annähernd rund ist (klappt nie ganz perfekt) und einen Durchmesser von 20 - 22 cm hat. Am Rand sollte der Teig einen Tick dicker sein.
-
-7.
-Pizzaböden auf einen mit Mehl bestäubten Holzschieber legen und mit der Tomatensauce bestreichen.
-
-8.
-Für eine Margherita die Pizza folgendermaßen belegen: 5 Scheiben Büffelmozzarella, frisches Basilikum, in die Mitte eine Olive, frisches Olivenöl dünn(!) darüberträufeln. Der Teig kann aber auch nach Belieben anders belegt werden. Wichtig ist nur: nicht zu dick! Weniger ist mehr.
-
-9.
-Belegte Pizza auf den Pizzastein schieben (zur Not geht auch ein normales Backblech, das mit Olivenöl eingestrichen wurde).
-
-10.
-8 - 12 Minuten backen bei 240 °C.</p>
+      <ol>
+        <li>
+          Den Ofen auf 250 °C vorheizen. Wird ein Pizzastein (Brotbackstein) benutzt, muss dieser 1 Std. vorher aufgeheizt werden.
+        </li>
+        <li>
+          Die Hefe mit den Fingern in das Mehl reiben, als würde man Streusel zubereiten. Das Salz, Olivenöl und Wasser zugeben und alles zu einem Teig verarbeiten. Der Teig kann per Hand geknetet werden, dabei nicht beirren lassen, da er am Anfang wirklich sehr klebt und man nicht wirklich an einen Erfolg glaubt. Wer es lieber mag, kann den Teig auch mit dem Knethaken zubereiten. Der Teig muss insgesamt 5 - 10 Minuten geknetet werden.
+        </li>
+        <li>
+          Den Teig 1 Stunde oder über Nacht im Kühlschrank(!!!) ruhen lassen.
+        </li>
+        <li>
+          Für die Tomatensauce alle Zutaten zusammen mixen. Die Konsistenz sollte dabei recht dick sein. Wenn zu dünn, mehr Tomatenmark. Wenn zu dick, mehr passierte Tomaten.
+        </li>
+        <li>
+          Teig aus dem Kühlschrank nehmen und in 3 gleichgroße Stücke teilen und zu Kugeln formen. Nochmals 10 Minuten gehen lassen. Arbeitsfläche mit Mehl bestäuben und Kugeln darauflegen
+        </li>
+        <li>
+          Auf die Mitte eines Teigbällchens den Handballen auflegen und den Teig vom Körper wegdrücken, so dass er gestreckt wird. Teig drehen und erneut wegdrücken. Das Ganze solange wiederholen, bis er annähernd rund ist (klappt nie ganz perfekt) und einen Durchmesser von 20 - 22 cm hat. Am Rand sollte der Teig einen Tick dicker sein.
+        </li>
+        <li>
+          Pizzaböden auf einen mit Mehl bestäubten Holzschieber legen und mit der Tomatensauce bestreichen.
+        </li>
+        <li>
+          Für eine Margherita die Pizza folgendermaßen belegen: 5 Scheiben Büffelmozzarella, frisches Basilikum, in die Mitte eine Olive, frisches Olivenöl dünn(!) darüberträufeln. Der Teig kann aber auch nach Belieben anders belegt werden. Wichtig ist nur: nicht zu dick! Weniger ist mehr.
+        </li>
+        <li>
+          Belegte Pizza auf den Pizzastein schieben (zur Not geht auch ein normales Backblech, das mit Olivenöl eingestrichen wurde).
+        </li>
+        <li>
+          8 - 12 Minuten backen bei 240 °C. Fertig ist sie.
+        </li>
+      </ol>
+      
     </section-zubereitung>
     <section-nutrition class="container-nutrition">
       <h2>Nährwertnangaben pro Person</h2>
@@ -113,10 +120,10 @@ Belegte Pizza auf den Pizzastein schieben (zur Not geht auch ein normales Backbl
             <th>Fett</th>
           </tr>
           <tr>
-            <td>412kcal</td>
+            <td>220kcal</td>
+            <td>8g</td>
+            <td>30g</td>
             <td>6g</td>
-            <td>1g</td>+
-            <td>93g</td>
           </tr>
         </tbody>
       </table>
@@ -135,8 +142,8 @@ Belegte Pizza auf den Pizzastein schieben (zur Not geht auch ein normales Backbl
     </a>
     </div>
     <div class="footer-link-space mobile-colum">
-      <a href="./impressum.html">Impressum</a>
-      <a href="./datenschutz.html">Datenschutz</a>
+      <a class="impressum" href="./impressum.html">Impressum</a>
+      <a class="datenschutz" href="./datenschutz.html">Datenschutz</a>
     </div>
     <div class="footer-padding-right">
       <a href="https://www.facebook.com/" target="_blank">

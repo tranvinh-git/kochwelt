@@ -1,5 +1,155 @@
-/** @format */
+/* pizza.css */
+main {
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.main-container-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  padding-bottom: 32px;
+  gap: 25px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 8px;
+  margin: 5px;
+  height: 30px;
+  width: 100px;
+}
+
+.clock-icon {
+  width: 16px;
+}
+
+.brain-icon {
+  width: 16px;
+}
+
+.main-img {
+  object-fit: cover;
+  height: 200px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input {
+  height: 32px;
+  width: 50px;
+  padding: 0;
+  border: 1px solid;
+  background-color: #efefef;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+}
+
+.warning {
+  color: red;
+  font-size: 14px;
+  height: 20px;
+  padding: 10px 10px 10px 0px;
+}
+
+.zutaten-liste {
+  list-style-type: none;
+  padding: 0;
+}
+
+.zutaten-liste li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #efefef;
+  border-radius: 8px;
+}
+
+.container-nutrition {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+tbody {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 200;
+  padding: 16px;
+}
+
+tr {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-zubereitung p {
+  overflow-wrap: anywhere;
+}
+
+.icon-zubereitung {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 8px;
+  height: 30px;
+  width: 200px;
+}
+
+p {
+  margin: 0;
+  object-fit: cover;
+}
 .prfile_Nasser {
   width: 150px;
   height: 150px;
