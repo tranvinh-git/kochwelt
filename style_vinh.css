@@ -7,7 +7,8 @@ body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0px;
-  min-width: 100vh;
+
+
 }
 
 /*Impressum und Datenschutz*/
@@ -95,6 +96,7 @@ input[type="submit" i] {
   margin: 5px;
   font-size: 16px;
 }
+
 .button-submit:hover {
   background-color: #45a049;
   transition: background-color 0.3s ease;
@@ -103,7 +105,7 @@ input[type="submit" i] {
 
 /*Main CSS*/
 
-main {
+.main-index {
   align-items: center;
   width: 100%;
   margin: 0 auto;
@@ -117,19 +119,24 @@ main {
   margin-left: 100px;
   padding-top: 40px;
   padding-bottom: 40px;
-justify-content: center;
+  justify-content: center;
 }
 
 .first-img {
   gap: 20px;
   width: 450px;
-  height: 2s70px;
+  height: 270px;
   border-radius: 8px;
 }
 
 .first-img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
+}
+
+.first-section-span {
+  padding-right: 100px;
+  text-align: center;
 }
 
 .first-section-container {
@@ -231,6 +238,7 @@ button:hover {
   height: 190px;
   border-radius: 8px;
 }
+
 .dishes-img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
@@ -330,6 +338,7 @@ footer a {
   cursor: pointer;
   filter: drop-shadow(0px 0px 8px white);
 }
+
 .footer-padding-right {
   padding-right: 100px;
 }
@@ -372,21 +381,25 @@ footer a {
 /* Media Responsive 1000px*/
 
 @media (max-width: 1000px) {
-  .mobile-dishes-img{
+  .mobile-dishes-img {
     width: 250px;
     height: 140px;
   }
+
   header {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .mobile-header-logo {
     width: 250px;
     padding-right: 40px;
   }
+
   .mobile-menu-link {
     font-size: 16px;
   }
+
   .mobile-first-container {
     margin: 0;
 
@@ -394,6 +407,7 @@ footer a {
     justify-content: center;
     align-items: center;
   }
+
   .mobile-button-container {
     justify-content: center;
     align-items: center;
@@ -401,6 +415,7 @@ footer a {
     display: flex;
     padding-top: 20px;
   }
+
   .first-section-container {
     align-items: center;
     text-align: center;
@@ -409,9 +424,9 @@ footer a {
   }
 }
 
-/* Media Responsiv 850*/
+/* Media Responsiv 950*/
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .mobile-second-section {
     flex-direction: column;
     display: flex;
@@ -421,13 +436,16 @@ footer a {
     padding-bottom: 40px;
 
   }
+
   .mobile-second-section-backg {
     height: auto;
 
   }
+
   .mobile-third-section {
     padding: 0;
   }
+
   .mobile-thrid-section-text {
     padding: 0;
     justify-content: center;
@@ -435,9 +453,21 @@ footer a {
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .mobile-third-section-p {
     padding-bottom: 40px;
     padding-right: 0;
+  }
+
+  .mobile-section-p {
+    padding: 0;
+    text-align: center;
+
+  }
+
+  .mobile-first-img {
+    width: 350px;
+    height: 160px;
   }
 }
 
@@ -467,5 +497,14 @@ footer a {
     height: 32px;
     filter: invert(100%);
     padding-left: 32px;
+  }
+
+  .mobile-first-img {
+    width: 250px;
+    height: 140px;
+  }
+  .mobile-third-section-img{
+    width: 250px;
+    height: 180px;
   }
 }

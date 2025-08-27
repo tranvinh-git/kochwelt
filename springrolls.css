@@ -1,8 +1,8 @@
 /* springrolls.css */
-main {
+.main-springrolls {
   align-items: center;
-  width: auto;
-  margin: 0 auto;
+
+
   padding-bottom: 40px;
   padding-top: 40px;
   padding-left: 100px;
@@ -12,6 +12,7 @@ main {
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
+
 }
 
 h2 {
@@ -51,6 +52,7 @@ h2 {
   height: 200px;
   border-radius: 8px;
   width: 100%;
+
 }
 
 
@@ -161,3 +163,4 @@ p {
   object-position: center 20%;
   object-fit: cover;
 }
+
