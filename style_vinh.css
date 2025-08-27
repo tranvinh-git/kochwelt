@@ -42,7 +42,6 @@ nav {
   align-items: center;
   padding-top: 105px;
   gap: 40px;
-    overflow: hidden;
 }
 
 .menu-link {
@@ -115,10 +114,10 @@ main {
 .first-section {
   display: flex;
   gap: 40px;
-  width: auto;
   margin-left: 100px;
   padding-top: 40px;
   padding-bottom: 40px;
+justify-content: center;
 }
 
 .first-img {
@@ -235,13 +234,6 @@ button:hover {
 .dishes-img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
-}
-
-.pizza1 {
-  padding-right: 190px;
-}
-.paella1 {
-  padding-left: 190px;
 }
 
 /*Third-section*/
@@ -375,6 +367,16 @@ footer a {
     justify-content: center;
     gap: 26px;
   }
+}
+
+/* Media Responsive 1000px*/
+
+@media (max-width: 1000px) {
+  .mobile-dishes-img{
+    width: 250px;
+    height: 140px;
+  }
+
 }
 
 /* Media Responsiv 520*/
