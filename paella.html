@@ -49,12 +49,14 @@
       <h2>Was werden wir brauchen?</h2>
       <p>Das Gericht ist für mindestens zwei Personen gedacht, und die Zutaten werden so angepasst an die Anzahl der
         Personen , die essen werden.</p>
-      
-      <label for="input_portions">Anzahl der Portionen:</label>
-      <input type="number" id="input_portions" value="2" white-space="3" max="10">
-      <button type="submit" onclick="calculateRecipe_Paella()">Portionen</button>
-      <p class="warning" id="warning"></p>
-   
+       <div class="input-button">
+        <label for="input_portions">Anzahl der Portionen:</label>
+          <div>
+            <input type="number" id="input_portions" value="2" white-space="3" max="10">
+            <button type="submit" onclick="calculateRecipe_Paella()">Portionen</button>
+          </div>
+          <p class="warning" id="warning"></p>
+         </div>
         <div>
         <h2>Zutaten:</h2>
         <ul class="zutaten-liste" id="ingredientListPaella"></ul>
@@ -87,9 +89,10 @@
       </p>
     </zubereitung>
 
-    <kalorien>
+    <kalorien class="kalorien">
       <h2>Nährungswerte pro Portion</h2>
       <table>
+        <tbody>
         <tr>
           <th class="eingaben-nutrition">kalorien</th>
           <th class="eingaben-nutrition">Eiweiss</th>
@@ -102,8 +105,9 @@
           <th class="werte-nutrition">40g</th>
           <th class="werte-nutrition">15g</th>
         </tr>
+        </tbody>
       </table>
-      <ersteller>
+      <ersteller class="ersteller">
         <h2>Rezept erstellt von Abel</h2>
         <img class="Abel" src="./img/abel.jpg" alt="">
       </ersteller>
