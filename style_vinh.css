@@ -179,22 +179,7 @@ h1 {
   margin-top: 0px;
 }
 
-button {
-  width: 100px;
-  height: 33px;
-  background-color: #008000;
-  color: white;
-  border: none;
-  border-radius: 0px 8px 8px 0px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 60px;
-  transition: background-color 0.3s ease;
-}
 
-button:hover {
-  background-color: #45a049;
-}
 
 .recipe-link {
   text-decoration: none;
@@ -472,9 +457,9 @@ footer a {
 }
 
 
-/* Media Responsiv 520*/
+/* Media Responsiv 550*/
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   .mobile-colum {
     flex-direction: column;
     display: flex;
@@ -507,4 +492,22 @@ footer a {
     width: 250px;
     height: 180px;
   }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .mobile-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+
