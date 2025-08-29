@@ -1,5 +1,5 @@
 /* paella.css */
-main {
+.paella-main {
   align-items: center;
   width: auto;
   margin: 0 auto;
@@ -178,14 +178,14 @@ table{
 }
 
 @media(max-width:720px){
-  main{
+  .paella-main{
     padding: 50px;
   }
 }
 
 @media(max-width:550px){
   
-main{
+.paella-main{
   padding-left: 30px;
   padding-right: 30px;
 }  
@@ -211,7 +211,7 @@ li{
   .kochlogos{
     padding: 5px;
   }
-  main{
+  .paella-main{
     padding-left: 15px;
     padding-right: 15px;
   }
