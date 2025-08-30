@@ -25,22 +25,65 @@ header {
   padding-right: 100px;
 }
 nav {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 105px;
+  height: 50px;
+  display: flex;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-.menu-link {
+.links-menu2{
+  height: 100%;
+  padding: 30px;
   text-decoration: none;
-  color: black;
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: black;  
 }
 
-.menu-link:hover {
-  text-decoration: underline;
-  color: green;
+.heideOnMobile{
+  padding-left: 25px;
+}
+
+nav:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .heideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
 }
 
 /* Footer css */
