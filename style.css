@@ -60,15 +60,17 @@ background-color: rgb(201, 200, 200);
 
 .menu{
   padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heideOnMobile{
-  padding-left: 25px;
   font-size: 20px;
   text-decoration: none;
   color: black;
-  padding-bottom: 15px
-
+  padding-bottom: 18px;
+  padding: 12px;
 }
 
 .heideOnMobile:hover{
