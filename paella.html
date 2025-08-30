@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paella</title>
   <link rel="stylesheet" href="paella.css">
-  <link rel="stylesheet" href="style_vinh.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
   <script src="paella.js"></script>
   <script src="index.js"></script>
@@ -14,26 +14,32 @@
 </head>
 
 <body onload="calculateRecipe_Paella()">
-   <header class="header1">
+  <header class="header1">
     <a href="index.html">
-     <img class="logo-header mobile-header-logo" src="./img/logo.png" alt="">
+      <img class="logo-header mobile-header-logo" src="./img/logo.png" alt="">
     </a>
-      
-   <div class="sidebar">
-          <a class="links-menu2" onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
-          <a class="links-menu2" href="./index.html">Start</a>
-          <a class="links-menu2" href="./springrolls.html">Reszept des Tages</a>
-          <a class="links-menu2" href="./kontakt.html">Kontakt</a>
-          <a class="links-menu2" href="./impressum.html">Impressum</a>
-        </div>
-      <div class="menu">
-        <a class="heideOnMobile" href="./index.html">Start</a>
-        <a class="heideOnMobile" href="./springrolls.html">Rezept des Tages</a>
-        <a class="heideOnMobile" href="./kontakt.html">Kontakt</a>
-        <a class="heideOnMobile" href="./impressum.html">Impressum</a>
-        <a class="menu-button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></a>
-      </div>
-      
+
+    <div class="sidebar">
+      <a class="links-menu2" onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></a>
+      <a class="links-menu2" href="./index.html">Start</a>
+      <a class="links-menu2" href="./springrolls.html">Reszept des Tages</a>
+      <a class="links-menu2" href="./kontakt.html">Kontakt</a>
+      <a class="links-menu2" href="./impressum.html">Impressum</a>
+    </div>
+    <div class="menu">
+      <a class="heideOnMobile" href="./index.html">Start</a>
+      <a class="heideOnMobile" href="./springrolls.html">Rezept des Tages</a>
+      <a class="heideOnMobile" href="./kontakt.html">Kontakt</a>
+      <a class="heideOnMobile" href="./impressum.html">Impressum</a>
+      <a class="menu-button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+          viewBox="0 -960 960 960" width="26px" fill="#1f1f1f">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg></a></a>
+    </div>
+
   </header>
 
   <main class="paella-main">
@@ -60,15 +66,15 @@
       <h2>Was werden wir brauchen?</h2>
       <p>Das Gericht ist für mindestens zwei Personen gedacht, und die Zutaten werden so angepasst an die Anzahl der
         Personen , die essen werden.</p>
-       <div class="input-button">
+      <div class="input-button">
         <label for="input_portions">Anzahl der Portionen:</label>
-          <div>
-            <input type="number" id="input_portions" value="2" white-space="3" max="10">
-            <button type="submit" onclick="calculateRecipe_Paella()">Portionen</button>
-          </div>
-          <p class="warning" id="warning"></p>
-         </div>
         <div>
+          <input type="number" id="input_portions" value="2" white-space="3" max="10">
+          <button type="submit" onclick="calculateRecipe_Paella()">Portionen</button>
+        </div>
+        <p class="warning" id="warning"></p>
+      </div>
+      <div>
         <h2>Zutaten:</h2>
         <ul class="zutaten-liste" id="ingredientListPaella"></ul>
       </div>
@@ -104,18 +110,18 @@
       <h2>Nährungswerte pro Portion</h2>
       <table>
         <tbody>
-        <tr>
-          <th class="eingaben-nutrition">kalorien</th>
-          <th class="eingaben-nutrition">Eiweiss</th>
-          <th class="eingaben-nutrition">kohlenhydrate</th>
-          <th class="eingaben-nutrition">Fett</th>
-        </tr>
-        <tr>
-          <th class="werte-nutrition">500kcal</th>
-          <th class="werte-nutrition">35g</th>
-          <th class="werte-nutrition">40g</th>
-          <th class="werte-nutrition">15g</th>
-        </tr>
+          <tr>
+            <th class="eingaben-nutrition">kalorien</th>
+            <th class="eingaben-nutrition">Eiweiss</th>
+            <th class="eingaben-nutrition">kohlenhydrate</th>
+            <th class="eingaben-nutrition">Fett</th>
+          </tr>
+          <tr>
+            <th class="werte-nutrition">500kcal</th>
+            <th class="werte-nutrition">35g</th>
+            <th class="werte-nutrition">40g</th>
+            <th class="werte-nutrition">15g</th>
+          </tr>
         </tbody>
       </table>
       <ersteller class="ersteller">
