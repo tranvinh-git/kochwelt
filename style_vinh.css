@@ -26,7 +26,7 @@ body {
   padding-right: 80px;
 }
 
-header {
+.header1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,9 +118,43 @@ nav:first-child {
 @media(max-width: 530px){
   .logo-header{
      width: 200px;
-  padding-right: 40px;
+  }
+   .header1{
+    padding-left:50px;
   }
 }
+    @media(max-width:350px){
+    .logo-header{
+    padding-right:20px;
+  
+  }
+     .header1{
+    padding-right:20px;
+  }
+  }
+
+
+  @media(max-width:1090px){
+    .logo-header{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .header1{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+  }
+  @media(max-width: 890px){
+  .logo-header{
+     width: 230px;
+     padding-top: 20px;
+     padding-right: 0px;
+  
+  }
+}
+  
+  
 
 /* Form Kontakt */
 .main-contact {
