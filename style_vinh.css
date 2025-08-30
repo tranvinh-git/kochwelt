@@ -74,15 +74,9 @@ form {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-color: #008000;
   background-color: #efefef;
-}
-
-.form-style {
   padding-left: 100px;
 }
 
-form h2 {
-  padding-left: 100px;
-}
 
 input[type="submit" i] {
   background-color: green;
@@ -439,9 +433,25 @@ footer a {
     width: 350px;
     height: 160px;
   }
+
+  .mobile-message {
+    height: 120px;
+    width: 315px;
+  }
+  .mobile-main-contact {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 }
 
+/* Media Responsiv 760*/
 
+@media (max-width: 760px) {
+.mobile-main-contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+}
 /* Media Responsiv 550*/
 
 @media (max-width: 550px) {
@@ -489,6 +499,20 @@ footer a {
     font-size: 20px;
     text-align: center;
   }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .mobile-mail-to {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
   p {
     text-align: center;
   }
@@ -497,7 +521,23 @@ footer a {
     justify-content: center;
     align-items: center;
   }
-  .mobile-main-impressum {
-    text-align: block;
+  .generator_results {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  form {
+    padding-left: 32px;
+  }
+  .mobile-form-h2 {
+    text-align: left;
+  }
 }
+@media (max-width: 440px) {
+  form {
+    padding-left: 10px;
+  }
+  .mobile-message {
+    width: 230px;
+    height: 190px;
+  }
 }
