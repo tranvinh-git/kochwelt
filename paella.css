@@ -177,6 +177,76 @@ table{
   width: 200px;
 }
 
+/*header.burger*/
+nav {
+  display: flex;
+
+}
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+
+nav:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .heideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
 @media(max-width:720px){
   .paella-main{
     padding: 50px;
