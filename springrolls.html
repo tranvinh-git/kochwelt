@@ -25,19 +25,19 @@
   </header>
   <main class="main-springrolls">
     <h1>Frühlingsrollen mit Gemüse</h1>
-    <img class="main-img" src="./img/springolls_big.jpg" alt="Springrolls">
-    <div class="main-container-icon">
-      <div class="icon">
+    <img class="main-img mobile-main-img" src="./img/springolls_big.jpg" alt="Springrolls">
+    <div class="main-container-icon mobile-icon-container">
+      <div class="icon mobile-icon">
         <img class="clock-icon" src="./img/icons/clock-regular.svg">
         <p>20 min</p>
       </div>
-      <div class="icon">
+      <div class="icon mobile-icon">
         <img class="brain-icon" src="./img/icons/brain-solid.svg">
         <p>mittel</p>
       </div>
-      <div class="icon">
+      <div class="icon mobile-icon">
         <img class="brain-icon" src="./img/icons/calendar-alt-regular.svg">
-        <p>20.08.2025</p>
+        <p>20.08.25</p>
       </div>
     </div>
 
@@ -47,11 +47,14 @@
         die Mengen anzupassen.<br> Maximal sind es 10 Portionen.</p>
 
       <!-- Eingabefeld für Portionen -->
+       <div class="input-button">
       <label for="input_portions">Anzahl der Portionen:</label>
+      <div>
       <input type="number" id="input_portions" value="2" white-space="3" max="10">
       <button class="button" type="submit" onclick="calculateRecipe_Springrolls()">Portionen</button>
+      </div>
       <p class="warning" id="warning"></p>
-
+      </div>
       <!-- Ergebnisbereich -->
       <div>
         <h2>Zutaten:</h2>
@@ -89,20 +92,22 @@
         Spring Roll Sauce oder Sweet Chili Sauce warm servieren.</p>
     </section-zubereitung>
     <section-nutrition class="container-nutrition">
-      <h2>Nährwertnangaben pro Person</h2>
+      <div>
+      <h2>Nährwertnangaben pro Portion</h2>
+      </div>
       <table>
         <tbody>
           <tr>
-            <th>Energie</th>
-            <th>Eiweiss</th>
-            <th>Kohlenhydrate</th>
-            <th>Fett</th>
+            <th class="eingaben-nutrition">Energie</th>
+            <th class="eingaben-nutrition">Eiweiss</th>
+            <th class="eingaben-nutrition">Kohlenhydrate</th>
+            <th class="eingaben-nutrition">Fett</th>
           </tr>
           <tr>
-            <td>412kcal</td>
-            <td>6g</td>
-            <td>1g</td>
-            <td>93g</td>
+            <th class="werte-nutrition">412kcal</th>
+            <th class="werte-nutrition">6g</th>
+            <th class="werte-nutrition">1g</th>
+            <th class="werte-nutrition">93g</th>
           </tr>
         </tbody>
       </table>
@@ -120,7 +125,7 @@
       <img class="footer-logo mobile-footer-logo" src="./img/logo_small.png" alt="Kochwelt Logo" />
     </a>
     </div>
-    <div class="footer-link-space mobile-colum">
+    <div class="footer-link-space">
       <a class="impressum" href="./impressum.html">Impressum</a>
       <a class="datenschutz" href="./datenschutz.html">Datenschutz</a>
     </div>

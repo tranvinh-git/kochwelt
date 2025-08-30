@@ -371,23 +371,8 @@ footer a {
     height: 140px;
   }
 
-  header {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .mobile-header-logo {
-    width: 250px;
-    padding-right: 40px;
-  }
-
-  .mobile-menu-link {
-    font-size: 16px;
-  }
-
   .mobile-first-container {
     margin: 0;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -460,12 +445,16 @@ footer a {
 /* Media Responsiv 550*/
 
 @media (max-width: 550px) {
-  .mobile-colum {
+  .footer-link-space {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 28pxpx;
+    gap: 28xp;
+  }
+
+  .mobile-section-p {
+    display: none;
   }
 
   footer a {
@@ -508,6 +497,7 @@ footer a {
     justify-content: center;
     align-items: center;
   }
+  .mobile-main-impressum {
+    text-align: block;
 }
-
-
+}
