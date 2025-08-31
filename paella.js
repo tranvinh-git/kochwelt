@@ -10,7 +10,7 @@ function calculateRecipe_Paella() {
     document.getElementById('warning').innerHTML="";
     if (portions < 2) {
         return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
-    } else if (portions > 10) {
+    } else if (portions > 15) {
         return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
     } else {
         calculatePaella();
