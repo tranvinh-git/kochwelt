@@ -36,6 +36,13 @@
     font-size: 12px;
 }
 
+.warning {
+  color: red;
+  font-size: 14px;
+  height: 20px;
+  padding: 10px 10px 10px 0px;
+}
+
 input{
    
     width: 32px;
@@ -161,7 +168,7 @@ table{
 .input-button{
   display: flex;
   align-items: center;
-  margin-left: 10px;
+
 }
 
 
