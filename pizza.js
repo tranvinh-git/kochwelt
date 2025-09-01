@@ -14,9 +14,9 @@ function calculateRecipe_Pizza() {
     console.log('Portionen: ', portions);
     document.getElementById('warning').innerHTML="";
     if (portions < 1) {
-        return warning.innerHTML = "Portionsangaben nur von 1 bis 5"
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
     } else if (portions > 5) {
-        return warning.innerHTML = "Portionsangaben nur von 1 bis 5"
+        return warning.innerHTML = "Bitte gib eine gültige Anzahl von Portionen ein!"
     } else {
         calculateTeig();
         calculateSauce();

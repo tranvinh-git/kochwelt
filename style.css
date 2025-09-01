@@ -7,8 +7,6 @@ body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0px;
-
-
 }
 
 /*Impressum und Datenschutz*/
@@ -229,7 +227,7 @@ input[type="submit" i] {
 .first-section {
   display: flex;
   gap: 40px;
-  margin-left: 100px;
+  margin-left: 80px;
   padding-top: 40px;
   padding-bottom: 40px;
   justify-content: center;
@@ -253,7 +251,6 @@ input[type="submit" i] {
 }
 
 .first-section-container {
-  min-width: 400px;
   width: flex 1;
   font-size: 16px;
   display: flex;
