@@ -1,4 +1,9 @@
-/* pizza.css */
+/**
+ * pizza.css
+ *
+ * @format
+ */
+
 main {
   align-items: center;
   width: auto;
@@ -66,7 +71,20 @@ input {
   text-align: center;
 }
 
-.button-container{
+button {
+  width: 100px;
+  height: 35px;
+  background-color: #008000;
+  color: white;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding-bottom: 2px;
+}
+.button-container {
   display: flex;
   align-items: center;
 }
@@ -155,8 +173,64 @@ p {
   margin: 0;
   object-fit: cover;
 }
-.prfile_Nasser {
+.profile_Nasser {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+@media (max-width: 520px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portionen-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button {
+    width: 80px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .profile_Nasser {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  label {
+    padding-left: 15px;
+    margin-left: 10px;
+    padding-top: 20px;
+  }
+
+  button {
+    width: 80px;
+    margin-top: 20px;
+  }
+    .container-nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    .mobile-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+@media (max-width: 320px) {
+  .profile_Nasser {
+    display: flex;
+    justify-content: center;
+  }
 }

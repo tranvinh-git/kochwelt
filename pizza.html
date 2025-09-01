@@ -17,7 +17,7 @@
     <a href="index.html">
      <img class="logo-header mobile-header-logo" src="./img/logo.png" alt="">
     </a>
-      
+
    <div class="sidebar">
           <a class="links-menu2" onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
           <a class="links-menu2" href="./index.html">Start</a>
@@ -32,9 +32,9 @@
         <a class="heideOnMobile" href="./impressum.html">Impressum</a>
         <a class="menu-button" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></a>
       </div>
-      
+
   </header>
-  <main>
+  <main class="main-pizza">
     <h1>Pizza Margerita</h1>
     <img class="main-img" src="./img/pizza-margherita.jpg" alt="pizza-margherita">
     <div class="main-container-icon">
@@ -58,10 +58,16 @@
         die Mengen anzupassen.<br> Maximal sind 5 Portionen.</p>
 
       <!-- Eingabefeld für Portionen -->
+       <div class="portionen-input">
       <label for="input_portions">Anzahl der Portionen:</label>
+      <div>
       <input type="number" id="input_portions" value="1" white-space="3" max="5">
+
       <button class="button" type="submit" onclick="calculateRecipe_Pizza()">Portionen</button>
+      </div>
       <p class="warning" id="warning"></p>
+      </div>
+
 
       <!-- Ergebnisbereich -->
       <div>
@@ -118,7 +124,7 @@
           8 - 12 Minuten backen bei 240 °C. Fertig ist sie.
         </li>
       </ol>
-      
+
     </section-zubereitung>
     <section-nutrition class="container-nutrition">
       <h2>Nährwertnangaben pro Person</h2>
@@ -141,8 +147,8 @@
     </section-nutrition>
     <section-profil>
       <h2>Rezept erstellt von Nasser </h2>
-      <div>
-        <img class="prfile_Nasser" src="./img/nasser-profile-pic.jpg" alt="Bild von Nasser">
+      <div class="mobile-profil">
+        <img class="profile_Nasser" src="./img/nasser-profile-pic.jpg" alt="Bild von Nasser">
       </div>
       <div>
     </section-profil>
