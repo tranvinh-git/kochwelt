@@ -176,6 +176,8 @@ nav:first-child {
 .main-contact {
   padding-left: 100px;
   padding-right: 100px;
+  margin-bottom: 277px;
+  margin-top:40px
 }
 
 form {
@@ -207,6 +209,8 @@ input[type="submit" i] {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
+
 
 /*Main CSS*/
 
@@ -533,6 +537,10 @@ nav li:first-child {
     justify-content: center;
     gap: 26px;
   }
+    .main-contact{
+    margin-bottom: 330px;
+
+}
 }
 
 /* Media Responsive 1000px*/
