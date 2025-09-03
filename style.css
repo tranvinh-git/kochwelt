@@ -7,6 +7,9 @@ body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0px;
+  min-height: 100vh;
+
+
 }
 
 /*Impressum und Datenschutz*/
@@ -24,14 +27,23 @@ body {
   padding-right: 80px;
 }
 
-.header1 {
+.header2 {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header1 {
+
   justify-content: space-between;
   align-items: center;
   height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  padding-left: 100px;
-  padding-right: 100px;
+
+
 }
 
 .menu12 {
@@ -222,15 +234,19 @@ input[type="submit" i] {
   margin: 0 auto;
   padding-bottom: 40px;
   padding-top: 40px;
+
 }
 
 .first-section {
   display: flex;
   gap: 40px;
-  margin-left: 80px;
   padding-top: 40px;
   padding-bottom: 40px;
   justify-content: center;
+  margin: auto;
+  max-width: 1920px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .first-img {
@@ -246,7 +262,7 @@ input[type="submit" i] {
 }
 
 .first-section-span {
-  padding-right: 100px;
+
   text-align: center;
 }
 
@@ -311,13 +327,21 @@ h1 {
   align-items: center;
   padding-bottom: 40px;
   padding-top: 40px;
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .second-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .recipe-link {
@@ -347,24 +371,34 @@ h1 {
   align-items: center;
   padding-bottom: 40px;
   padding-top: 40px;
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .third-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .third-section-text {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-bottom: 60px;
+  max-width: 1920px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .third-section-img {
@@ -382,9 +416,19 @@ h1 {
 footer {
   background-color: #403b3b;
   height: 150px;
+
+}
+
+.footer-maxwitdh {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
 }
 
 footer a {
@@ -397,7 +441,7 @@ footer a {
   width: 60px;
   height: 60px;
   filter: invert(100%);
-  padding-left: 100px;
+
 }
 
 .footer-logo:hover {
@@ -434,9 +478,7 @@ footer a {
   filter: drop-shadow(0px 0px 8px white);
 }
 
-.footer-padding-right {
-  padding-right: 100px;
-}
+
 
 /*Nav-Bar Burger Menu*/
 

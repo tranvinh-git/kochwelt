@@ -9,6 +9,8 @@ html {
   padding-top: 40px;
   padding-left: 100px;
   padding-right: 100px;
+  max-width: 1920px;
+  
 }
 
 h1 {
