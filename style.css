@@ -24,7 +24,6 @@ body {
 /* Header CSS*/
 .logo-header {
   width: 300px;
-  padding-right: 80px;
 }
 
 .header2 {
@@ -33,17 +32,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 
 .header1 {
-
   justify-content: space-between;
   align-items: center;
   height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-
 }
 
 .menu12 {
@@ -337,7 +335,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
   max-width: 1920px;
   margin: auto;
   padding-left: 30px;
@@ -386,15 +383,13 @@ h1 {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+
 }
 
 .third-section-text {
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding-bottom: 60px;
   max-width: 1920px;
   margin: auto;
   padding-left: 30px;
@@ -407,10 +402,6 @@ h1 {
   border-radius: 8px;
 }
 
-
-.third-section-p {
-  padding-right: 80px;
-}
 
 /* Footer css */
 footer {
