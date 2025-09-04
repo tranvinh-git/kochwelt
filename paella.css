@@ -1,12 +1,13 @@
 /* paella.css */
 .paella-main {
-  align-items: center;
-  width: auto;
-  margin: 0 auto;
+ align-items: center;
   padding-bottom: 40px;
   padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  
 }
 .main-image-paella{
     height: 200px;
@@ -191,13 +192,16 @@ table{
 }
 
 .header1 {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+    height: 150px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  padding-left: 100px;
-  padding-right: 100px;
+ 
 }
 
 .menu12 {
