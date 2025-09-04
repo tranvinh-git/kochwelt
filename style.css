@@ -5,7 +5,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+
   margin: 0px;
   min-height: 100vh;
 }
@@ -22,6 +22,8 @@ body {
   padding-right: 30px;
   max-width: 1920px;
   margin: 0 auto;
+  min-height: 100vh;
+  padding-top: 30px;
 }
 .main-datenschutz {
   padding-left: 30px;
@@ -75,7 +77,7 @@ body {
 }
 
 .menu {
-  padding-top: 70px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,6 +156,7 @@ nav:first-child {
 @media (max-width: 350px) {
   .logo-header {
     padding-right: 20px;
+    width: 180px;
   }
 
   .header1 {
@@ -165,6 +168,7 @@ nav:first-child {
   .logo-header {
     padding-right: 20px;
     padding-left: 20px;
+
   }
 
   .header1 {
@@ -175,20 +179,24 @@ nav:first-child {
 
 @media (max-width: 890px) {
   .logo-header {
-    width: 230px;
+    
     padding-top: 20px;
-    padding-right: 0px;
+
+  }
+  .heideOnMobile {
+    font-size: 16px;
   }
 }
 
 /* Form Kontakt */
 .main-contact {
-  padding-left: 100px;
-  padding-right: 100px;
-  height: 100vh;
-  display: flex;
-  padding: 100px;
-  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+    margin: 0 auto;
+  max-width: 1920px;
+  min-height: 100vh;
 }
 
 form {
@@ -197,9 +205,9 @@ form {
   border-color: #008000;
   background-color: #efefef;
   padding-left: 100px;
-  width: 100%;
-  padding-bottom: 100px;
-  padding-top: 100px;
+
+
+
 }
 
 input[type="submit" i] {
