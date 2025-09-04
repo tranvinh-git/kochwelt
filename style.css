@@ -151,6 +151,9 @@ nav:first-child {
   .header1 {
     padding-left: 50px;
   }
+  .header2{
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -231,10 +234,10 @@ input[type="submit" i] {
 
 @media(max-width:375px){
   form{
-    width: 250px;
+    width: 330px;
     height: 250px;
     padding-top: 20px;
-    height: 500px;
+    height: 550px;
     
   }
   
