@@ -35,6 +35,7 @@ body {
 /* Header CSS*/
 .logo-header {
   width: 300px;
+  padding-top: 30px;
 }
 
 .header2 {
@@ -153,6 +154,7 @@ nav:first-child {
   }
   .header2{
     padding-left: 0px;
+    padding-top: 20px;
   }
 }
 
@@ -178,12 +180,16 @@ nav:first-child {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .header2{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 890px) {
   .logo-header {
     
-    padding-top: 20px;
+    padding-top: 30px;
 
   }
   .heideOnMobile {
@@ -234,7 +240,7 @@ input[type="submit" i] {
 
 @media(max-width:375px){
   form{
-    width: 330px;
+    
     height: 250px;
     padding-top: 20px;
     height: 550px;
