@@ -285,5 +285,9 @@ p {
   .main-container-icon {
     gap: 5px;
     font-size: 10px;
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   }
 }
