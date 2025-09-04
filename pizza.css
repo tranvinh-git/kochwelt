@@ -284,6 +284,6 @@ p {
 @media (max-width: 400px) {
   .main-container-icon {
     gap: 5px;
-    font-size: 9px;
+    font-size: 10px;
   }
 }
