@@ -8,17 +8,26 @@ body {
   box-sizing: border-box;
   margin: 0px;
   min-height: 100vh;
-
-
 }
 
 /*Impressum und Datenschutz*/
 
 .generator_results {
   margin: 20px auto;
-  padding-left: 100px;
-  padding-right: 100px;
   background-color: #f9f9f9;
+}
+
+.main-impressum {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main-datenschutz {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* Header CSS*/
@@ -35,7 +44,6 @@ body {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 
 .header1 {
   justify-content: space-between;
@@ -64,7 +72,6 @@ body {
 
 .links-menu2:hover {
   background-color: #008000;
-
 }
 
 .menu {
@@ -134,7 +141,7 @@ nav:first-child {
   }
 }
 
-@media(max-width: 530px) {
+@media (max-width: 530px) {
   .logo-header {
     width: 200px;
   }
@@ -144,10 +151,9 @@ nav:first-child {
   }
 }
 
-@media(max-width:350px) {
+@media (max-width: 350px) {
   .logo-header {
     padding-right: 20px;
-
   }
 
   .header1 {
@@ -155,8 +161,7 @@ nav:first-child {
   }
 }
 
-
-@media(max-width:1090px) {
+@media (max-width: 1090px) {
   .logo-header {
     padding-right: 20px;
     padding-left: 20px;
@@ -166,19 +171,15 @@ nav:first-child {
     padding-right: 20px;
     padding-left: 20px;
   }
-
 }
 
-@media(max-width: 890px) {
+@media (max-width: 890px) {
   .logo-header {
     width: 230px;
     padding-top: 20px;
     padding-right: 0px;
-
   }
 }
-
-
 
 /* Form Kontakt */
 .main-contact {
@@ -188,7 +189,6 @@ nav:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 form {
@@ -201,7 +201,6 @@ form {
   padding-bottom: 100px;
   padding-top: 100px;
 }
-
 
 input[type="submit" i] {
   background-color: green;
@@ -222,8 +221,6 @@ input[type="submit" i] {
   cursor: pointer;
 }
 
-
-
 /*Main CSS*/
 
 .main-index {
@@ -232,7 +229,6 @@ input[type="submit" i] {
   margin: 0 auto;
   padding-bottom: 40px;
   padding-top: 40px;
-
 }
 
 .first-section {
@@ -260,7 +256,6 @@ input[type="submit" i] {
 }
 
 .first-section-span {
-
   text-align: center;
 }
 
@@ -302,8 +297,6 @@ h1 {
   font-weight: 700;
   margin-top: 0px;
 }
-
-
 
 .recipe-link {
   text-decoration: none;
@@ -383,7 +376,6 @@ h1 {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
-
 }
 
 .third-section-text {
@@ -402,12 +394,10 @@ h1 {
   border-radius: 8px;
 }
 
-
 /* Footer css */
 footer {
   background-color: #403b3b;
   height: 150px;
-
 }
 
 .footer-maxwitdh {
@@ -419,7 +409,6 @@ footer {
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-
 }
 
 footer a {
@@ -432,7 +421,6 @@ footer a {
   width: 60px;
   height: 60px;
   filter: invert(100%);
-
 }
 
 .footer-logo:hover {
@@ -469,8 +457,6 @@ footer a {
   filter: drop-shadow(0px 0px 8px white);
 }
 
-
-
 /*Nav-Bar Burger Menu*/
 
 nav a {
@@ -498,7 +484,6 @@ nav li:first-child {
   position: fixed;
   top: 0;
   right: 0;
-  ;
   z-index: 999;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.2);
@@ -537,7 +522,6 @@ nav li:first-child {
   }
 }
 
-
 /* Media Responsiv 1280*/
 
 @media (max-width: 1280px) {
@@ -571,7 +555,6 @@ nav li:first-child {
     justify-content: center;
     gap: 26px;
   }
-
 }
 
 /* Media Responsive 1000px*/
@@ -615,12 +598,10 @@ nav li:first-child {
     align-items: center;
     gap: 28px;
     padding-bottom: 40px;
-
   }
 
   .mobile-second-section-backg {
     height: auto;
-
   }
 
   .mobile-third-section {
@@ -643,7 +624,6 @@ nav li:first-child {
   .mobile-section-p {
     padding: 0;
     text-align: center;
-
   }
 
   .mobile-first-img {

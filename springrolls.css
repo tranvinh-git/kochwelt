@@ -7,18 +7,20 @@ html {
   align-items: center;
   padding-bottom: 40px;
   padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
   max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   
 }
+
 
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
-
 }
 
+  
 h2 {
   font-size: 24px;
 }
